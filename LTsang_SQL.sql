@@ -1,6 +1,4 @@
 
-
-
 --List the following details of each employee: employee number, 
 --last name, first name, gender, and salary.
 SELECT employees.employee_no, employees.last_name, employees.first_name, employees.gender, salaries.salary FROM employees INNER JOIN salaries ON salaries.employee_no=employees.employee_no
@@ -23,3 +21,4 @@ SELECT employees.employee_no, employees.last_name, employees.first_name, departm
 --In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 SELECT employees.last_name, COUNT(employees.last_name) AS "Count of Names" FROM employees GROUP BY employees.last_name ORDER BY "Count of Names" DESC
 
+--Bonus:
